@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Median Household Income by Zip Code</h1>
+
+<div id="curve_chart" style="width: 900px; height: 500px"></div>
+
+<%= link_to "Low High Comparision", low_high_path %>
+
+<script type="text/javascript"
+      src="https://www.google.com/jsapi?autoload={
+        'modules':[{
+          'name':'visualization',
+          'version':'1',
+          'packages':['corechart']
+        }]
+      }"></script>
+
+<script type="text/javascript">
+  google.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', '58102 Median Household Income', "58103 Median Household  Income", "58104 Median Household Income"],
+      ['2011',  37904, 39566, 62112],
+      ['2012',  38886, 41328, 64024],
+      ['2013',  41737, 41479, 65445]
+    ]);
+
+    var options = {
+      title: '',
+      curveType: 'function',
+      legend: { position: 'right' }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
