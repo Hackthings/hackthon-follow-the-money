@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @income.subject %>
+</p>
+
+<p>
+  <strong>Households:</strong>
+  <%= @income.households %>
+</p>
+
+<p>
+  <strong>Families:</strong>
+  <%= @income.families %>
+</p>
+
+<p>
+  <strong>Married-couples:</strong>
+  <%= @income.married-couples %>
+</p>
+
+<p>
+  <strong>Nonfamily:</strong>
+  <%= @income.nonfamily %>
+</p>
+
+<%= link_to 'Edit', edit_income_path(@income) %> |
+<%= link_to 'Back', incomes_path %>
