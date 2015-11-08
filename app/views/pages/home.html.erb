@@ -6,7 +6,7 @@
 
 <div class="row">
   <div class="small-12 columns">
-    <h3>Summary:</h3>
+    <h2>Summary:</h2>
   </div>
 </div>
 
@@ -31,12 +31,15 @@
     <p>
       This data does not ANSWER questions. It only helps refine where you might ask more precise ones.
     </p>
+    <p>
+      Data was pulled from the US Census Fact Finder app found <a href="http://factfinder.census.gov/faces/nav/jsf/pages/guided_search.xhtml">here</a>.
+    </p>
   </div>
 </div>
 
 <div class="row">
   <div class="small-12 columns">
-    <h3>Data Sets:</h3>
+    <h2>Data Sets:</h2>
   </div>
 </div>
 
@@ -45,5 +48,20 @@
     <%= link_to "Median Income By Zipcode", median_income_path %> <strong>|</strong>
     <%= link_to "Low to High Income Distributions by Zipcode", low_high_path %> <strong>|</strong>
     <%= link_to "Comparision of Married vs Non Married Households", married_or_not_path %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h3>Next Steps:</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <ol>
+      <li>Break Down Data for Census Parcels to provide higher resolution views</li>
+      <li>Map Zipcodes and Parcels to geoJSON to provide visual representations of the city</li>
+    </ol>
   </div>
 </div>

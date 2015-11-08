@@ -11,6 +11,8 @@
 **WARNING!!!!**
 This data does not ANSWER questions. It only helps refine where you might ask more precise ones.
 
+Data was pulled from the US Census found here: http://factfinder.census.gov/faces/nav/jsf/pages/guided_search.xhtml
+
 **Next Steps**
 - [ ] Break Down Data for Census Parcels to provide higher resolution views
 - [ ] Map Zipcodes and Parcels to geoJSON to provide visual representations of the city
