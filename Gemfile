@@ -16,7 +16,6 @@ gem "puma"
 gem "sass-rails"
 gem "simple_form"
 gem "title"
-gem "turbolinks"
 gem "uglifier"
 gem "foundation-rails"
 

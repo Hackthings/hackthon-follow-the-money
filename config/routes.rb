@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   resources :incomes
 
-  %w(median_income low_high).each do |page|
+  root to: "pages#home"
+  %w(home median_income low_high married_or_not).each do |page|
     get page, to: "pages##{page}", as: page, path: page.dasherize
   end
   # The priority is based upon order of creation: first created -> highest priority.

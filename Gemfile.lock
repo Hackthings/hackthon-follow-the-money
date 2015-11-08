@@ -284,8 +284,6 @@ GEM
     title (0.0.5)
       i18n
       rails (>= 3.1)
-    turbolinks (2.5.3)
-      coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (2.7.2)
@@ -350,7 +348,6 @@ DEPENDENCIES
   spring-commands-rspec
   timecop
   title
-  turbolinks
   uglifier
   web-console
   webmock
