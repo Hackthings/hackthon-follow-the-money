@@ -10,3 +10,7 @@
 
 **WARNING!!!!**
 This data does not ANSWER questions. It only helps refine where you might ask more precise ones.
+
+**Next Steps**
+- [ ] Break Down Data for Census Parcels to provide higher resolution views
+- [ ] Map Zipcodes and Parcels to geoJSON to provide visual representations of the city
