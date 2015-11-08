@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="small-12 columns">
+    <h1>Married versus Non-Married Households Income</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <div id="linechart_material"></div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <h3>Links to other Sets</h3>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-12 columns">
+    <%= link_to "Home", home_path %> <strong>|</strong>
+    <%= link_to "Median Income By Zipcode", median_income_path %> <strong>|</strong>
+    <%= link_to "Low to High Income Distributions by Zipcode", low_high_path %>
+  </div>
+</div>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+  google.load('visualization', '1.1', {packages: ['line']});
+  google.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'Year');
+    data.addColumn('number', '58104 Married');
+    data.addColumn('number', '58104 Non-Married');
+    data.addColumn('number', '58103 Married');
+    data.addColumn('number', '58103 Non-Married');
+    data.addColumn('number', '58102 Married');
+    data.addColumn('number', '58102 Non-Married');
+
+    data.addRows([
+      [2011,  97752, 38000, 71594, 29233, 78900, 21721],
+      [2012,  99159, 38867, 74214, 31366, 81064, 24624],
+      [2013,  100129, 38884, 72108, 31379, 83633, 24850]
+    ]);
+
+    var options = {
+      chart: {
+        title: '',
+        subtitle: 'in thousands of dollars (USD)'
+      },
+      width: 1000,
+      height: 600
+    };
+
+    var chart = new google.charts.Line(document.getElementById('linechart_material'));
+
+    chart.draw(data, options);
+  }
+</script>

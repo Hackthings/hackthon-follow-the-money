@@ -1,7 +1,8 @@
 # Hack Fargo Hackathon November 2015
 
 ### Summary:
-**Hypothosis:** Incomes distributions in Fargo would not be equally spread across town.
+**Hypothosis:** Incomes distributions in Fargo will not be equally spread across town.
+
 **Questions:**
 
 1. If the hypothesis is true does income move through the city over time?

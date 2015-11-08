@@ -7,7 +7,7 @@
 
 <div class="row">
   <div class="small-12 columns">
-    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+    <div id="curve_chart" style="width: 1000px; height: 800px"></div>
   </div>
 </div>
 
@@ -19,16 +19,13 @@
 </div>
 
 <div class="row">
-  <div class="small-1 columns">
-    <br>
-  </div>
-  <div class="small-11 columns">
-    <ul>
-      <li><%= link_to "Low High Comparision", low_high_path %></li>
-      <li><%= link_to "Married vs. Not Married Comparision", married_or_not_path %></li>
-    </ul>
+  <div class="small-12 columns">
+    <%= link_to "Home", home_path %> <strong>|</strong>
+    <%= link_to "Low to High Income Distributions by Zipcode", low_high_path %> <strong>|</strong>
+    <%= link_to "Comparision of Married vs Non Married Households", married_or_not_path %>
   </div>
 </div>
+
 
 <script type="text/javascript"
       src="https://www.google.com/jsapi?autoload={
